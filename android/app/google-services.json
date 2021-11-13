@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1057312237714",
+    "project_id": "explore-bangladesh-23846",
+    "storage_bucket": "explore-bangladesh-23846.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057312237714:android:57022006b36dcf67459e4b",
+        "android_client_info": {
+          "package_name": "com.insoulit.explore_bangladesh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057312237714-mtqfi4te47ufegp7h09r0i4tslmdcpo6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATWrYUvCkmmuTBRbM3Zzyz3hfFk-T2ftQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1057312237714-mtqfi4te47ufegp7h09r0i4tslmdcpo6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
