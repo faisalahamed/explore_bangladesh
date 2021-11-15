@@ -50,7 +50,6 @@ class _UploadImageState extends State<UploadImage> {
             child: (_image != null)
                 ? Image.file(File(_image!.path))
                 : const Text('no image'),
-            // child: Image.file(File('/data/user/0/com.insoulit.explore_bangladesh/cache/image_picker1450795110286223158.jpg')),
           ),
           url != null ? Image.network(url!) : Container()
         ],

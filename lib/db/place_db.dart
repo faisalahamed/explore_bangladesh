@@ -17,6 +17,7 @@ class PlaceDb {
           'address': place.address,
           'type': place.type,
           'phone': place.phone,
+          'status': place.status,
         })
         .then((value) => print("place Added"))
         .catchError((error) => print("Failed to add Place:"));

@@ -5,15 +5,16 @@ class Place {
   late final String address;
   late final String type;
   late final String? phone;
+  late final bool status;
 
-  Place({
-    required this.placename,
-    required this.image,
-    required this.district,
-    required this.address,
-    required this.type,
-    this.phone,
-  });
+  Place(
+      {required this.placename,
+      required this.image,
+      required this.district,
+      required this.address,
+      required this.type,
+      this.phone,
+      this.status = false});
 
   Place.fromJson(Map<String, dynamic> json) {
     placename = json['placename'];
