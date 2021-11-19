@@ -5,7 +5,7 @@ import 'package:explore_bangladesh/constants/place_type.dart';
 import 'package:explore_bangladesh/db/place_db.dart';
 import 'package:explore_bangladesh/db/upload_image_db.dart';
 import 'package:explore_bangladesh/model/place.dart';
-import 'package:explore_bangladesh/widgets/input_text_field.dart';
+import 'package:explore_bangladesh/screen/add_place/addplace_widget/input_text_field.dart';
 import 'package:explore_bangladesh/widgets/my_drop_down.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -86,9 +86,9 @@ class _AddPlaceState extends State<AddPlace> {
               ),
               TextButton(
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.resolveWith(
-                      (states) => Colors.blue),
-                ),
+                    backgroundColor: MaterialStateProperty.resolveWith(
+                        (states) => Colors.blue),
+                    enableFeedback: false),
                 onPressed:
                     formValidationStatus ? uploadToFirestore : _formValidation,
                 child: const Text(
@@ -113,8 +113,11 @@ class _AddPlaceState extends State<AddPlace> {
       phone: phone.text,
     );
     PlaceDb addPlace = PlaceDb(place: place);
-    // addPlace.addPlaceDb();
+    addPlace.addPlaceDb();
+    Navigator.of(context).pushNamed('/');
+
     print('success');
+
     // AddPlace.getUsers();
     // print(place.status);
   }

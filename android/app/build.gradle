@@ -45,8 +45,8 @@ android {
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.insoulit.explore_bangladesh"
-        minSdkVersion 21
-        targetSdkVersion 30
+        minSdkVersion 28
+        targetSdkVersion 31
         multiDexEnabled true
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
